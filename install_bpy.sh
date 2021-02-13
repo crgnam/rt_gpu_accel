@@ -10,6 +10,8 @@ sudo apt install python3.7
 sudo update-alternatives --install /usr/bin/python python /usr/bin/3.7 0
 
 # Install release of bpy (currently 2.82)
+python3.7 -m pip install --upgrade pip wheel future-fstrings
+python3.7 -m pip install numpy scipy
 python3.7 -m pip install bpy && bpy_post_install
 
 
